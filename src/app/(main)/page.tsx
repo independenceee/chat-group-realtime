@@ -1,11 +1,14 @@
-import Image from 'next/image'
 import React from 'react'
 import { UserButton } from '@clerk/nextjs'
+import { ModeToggle } from "@/components/mode-toggle";
 
 
 const Home = function() {
   return (
-    <UserButton afterSignOutUrl='/'/>
+    <main>
+      <UserButton afterSignOutUrl='/'/>
+      <ModeToggle/>
+    </main>
   )
 }
 
